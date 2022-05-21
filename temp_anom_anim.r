@@ -23,7 +23,7 @@ library(av)# (for mpeg out)
 # Columns 11 and 12 are the lower and upper bounds of the 95% confidence interval of the combined effects of all the uncertainties described in the HadCRUT4 error model (measurement and sampling, bias and coverage uncertainties).
 
 
-df <- read.table("/Users/andrew/Dropbox/05_CC/data/temp/temp_dev_HadCRUT_annual_ns_avg_smooth.txt")
+df <- read.table("temp_dev_HadCRUT_annual_ns_avg_smooth.txt")
 
 df <- df[,c("V1", "V2", "V11","V12")]
 names(df) <- c('year', 'median', 'lower95','upper95')
